@@ -25,7 +25,7 @@
   </head>
 
   <body>
-    <header class="header-content" data-modal>
+    <header class="header-content">
       <div class="container header-div">
         <nav class="navigation">
           <a href="./index.html" class="logo-web">
@@ -58,12 +58,13 @@
             </li>
           </ul>
         </address>
-        <button class="menu-mob-tab" type="button" data-modal-open>
+        <div>
+        <button class="open-menu-btn" type="button" data-menu-open>
           <svg class="icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger-menu"></use>
           </svg>
         </button>
-        </button>
+        </div>
       </div>
     </header>
 
@@ -714,7 +715,7 @@
       </div>
     </footer>
 
-    <div class="backdrop hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="btn-close" type="button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
@@ -800,9 +801,9 @@
       </div>
     </div>
 
-<div class="menu-mob" data-modal>
+<div class="menu-mob" data-menu>
       <div class="container-mob-menu">
-      <button type="button" class="btn-close-menu-mob" data-modal-close>
+      <button type="button" class="close-menu-btn" data-menu-close>
               <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -869,7 +870,7 @@
     </div>
     </div>
 
-
+    <script src="./js/menu.js">
     <script src="./js/modal.js"></script>
   </body>
 </html>
