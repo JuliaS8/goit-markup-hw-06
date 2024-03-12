@@ -31,7 +31,7 @@
           <a href="./index.html" class="logo-web">
             Web<span class="logo-studio-header">Studio</span></a
           >
-          <ul class="menu">
+          <ul class="menu-header">
             <li class="menu-link">
               <a href="./index.html" class="button-link underline">Studio</a>
             </li>
@@ -59,7 +59,7 @@
           </ul>
         </address>
         <div>
-          <button class="open-menu-btn" type="button" data-menu-open>
+          <button type="button" class="open-menu-btn" data-menu-open>
             <svg class="icon" width="24" height="24">
               <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
@@ -792,8 +792,10 @@
                   <use href="./images/icons.svg#icon-property"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-policy">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a class="privacy-policy">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="button-send">Send</button>
@@ -801,36 +803,39 @@
       </div>
     </div>
 
-    <div class="menu-mob" data-menu>
+    <div class="menu" data-menu>
       <div class="container-mob-menu">
         <button type="button" class="close-menu-btn" data-menu-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-
-        <ul class="menu-mob-list">
-          <li class="menu-link-mob">
-            <a href="./index.html" class="button-link-mob mob-studio">Studio</a>
-          </li>
-          <li class="menu-link-mob">
-            <a href="" class="button-link-mob">Portfolio</a>
-          </li>
-          <li class="menu-link-mob">
-            <a href="" class="button-link-mob">Contacts</a>
-          </li>
-        </ul>
+        <nav class="navigation-menu">
+          <ul class="menu-mob-list">
+            <li class="menu-link-mob">
+              <a href="./index.html" class="button-link-mob mob-studio"
+                >Studio</a
+              >
+            </li>
+            <li class="menu-link-mob">
+              <a href="" class="button-link-mob">Portfolio</a>
+            </li>
+            <li class="menu-link-mob">
+              <a href="" class="button-link-mob">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
         <address class="button-links-mob">
           <ul class="contacts-items-mob">
-            <li>
-              <a class="button-address-mob" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+            <li class="tel-color">
+              <a class="button-address-mob mob-color" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
               >
             </li>
             <li>
-              <a class="button-address-mob" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
+              <a class="button-address-mob" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
               >
             </li>
           </ul>
@@ -871,7 +876,7 @@
       </div>
     </div>
 
-    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
